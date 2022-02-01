@@ -33,7 +33,6 @@ function HorizontalTeamCard({ image, name, position, description }) {
             <MKBox
               component="img"
               src={image}
-              alt={name}
               width="100%"
               borderRadius="md"
               shadow="lg"

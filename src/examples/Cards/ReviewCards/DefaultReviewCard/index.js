@@ -23,8 +23,9 @@ import Icon from "@mui/material/Icon";
 import MKBox from "../../../../components/MKBox";
 import MKAvatar from "../../../../components/MKAvatar";
 import MKTypography from "../../../../components/MKTypography";
+import { motion } from "framer-motion";
 
-function DefaultReviewCard({ color, image, name, date, review, rating }) {
+function DefaultReviewCard({ color, image, name, date, review, rating,variants, animate }) {
   const ratings = {
     0.5: [
       <Icon key={1}>star_outline</Icon>,
@@ -99,12 +100,16 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
   };
 
   return (
+    <motion.div
+    variants={variants}
+    animate={animate}
+    >
     <MKBox
       variant={color === "transparent" ? "contained" : "gradient"}
       bgColor={color}
       borderRadius="xl"
       shadow={color === "transparent" ? "none" : "md"}
-      p={3}
+      p={2}
     >
       {image && (
         <MKAvatar
@@ -159,6 +164,8 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
         {ratings[rating]}
       </MKTypography>
     </MKBox>
+    </motion.div>
+    
   );
 }
 

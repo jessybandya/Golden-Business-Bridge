@@ -73,7 +73,7 @@ function ExampleCard({ image, name, count, pro,desc, ...rest }) {
         src={image}
         alt={name}
         width="100%"
-        my="auto"
+        my={0}
         opacity={pro ? 0.6 : 1}
       />
     </MKBox>
@@ -95,7 +95,7 @@ function ExampleCard({ image, name, count, pro,desc, ...rest }) {
               {name}
             </MKTypography>
           )}
-          {count > 0 && (
+          {name && (
             <MKTypography variant="button" fontWeight="regular" color="secondary">
             {desc}
             </MKTypography>

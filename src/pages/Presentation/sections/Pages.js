@@ -32,10 +32,10 @@ import ExampleCard from "../components/ExampleCard";
 import data from "./data/pagesData";
 
 function Pages() {
-  const renderData = data.map(({ image, name, route }) => (
+  const renderData = data.map(({ image, name, route, desc }) => (
     <Grid item xs={12} md={6} sx={{ mb: { xs: 3, lg: 0 } }} key={name}>
       <Link to={route}>
-        <ExampleCard image={image} name={name} display="grid" minHeight="auto" />
+        <ExampleCard image={image} name={name} desc={desc} display="grid" minHeight="auto" />
       </Link>
     </Grid>
   ));
@@ -44,26 +44,17 @@ function Pages() {
     <MKBox component="section" py={6}>
       <Container>
         <Grid
-          container
-          item
-          xs={12}
-          lg={6}
-          flexDirection="column"
-          alignItems="center"
-          sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
+
         >
 
-          <MKTypography variant="h2" fontWeight="bold">
-            QUOTE
+          <MKTypography variant="h2" style={{marginTop:10}} fontWeight="bold">
+           <center>Clients</center> 
+           <hr />
           </MKTypography>
-          <MKTypography variant="body1" color="text">
-            
-"Based on your strengths, we will work on the things that otherwise bog you down, as you concentrate your time on what you do best. With virtual assistant services you will be able to do more without working so hard."
 
-          </MKTypography>
         </Grid>
       </Container>
-      <Container sx={{ mt: { xs: 8, lg: 16 } }}>
+      <Container >
         <Grid container spacing={3}>
           <Grid item xs={12} lg={9} sx={{ mt: 3, px: { xs: 0, lg: 8 } }}>
             <Grid container spacing={3}>

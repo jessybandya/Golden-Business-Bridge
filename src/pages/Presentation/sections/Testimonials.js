@@ -31,10 +31,16 @@ import facebookLogo from "../../../assets/images/logos/gray-logos/logo-facebook.
 import nasaLogo from "../../../assets/images/logos/gray-logos/logo-nasa.svg";
 import vodafoneLogo from "../../../assets/images/logos/gray-logos/logo-vodafone.svg";
 import digitalOceanLogo from "../../../assets/images/logos/gray-logos/logo-digitalocean.svg";
+import ScrollToTop from "../../../components/ScrollToTop";
+import { motion } from "framer-motion";
+import { useScroll } from "../../../components/useScroll";
+import { textAnimation, cardAnimation } from "../../../utils/Animations";
 
 function Information() {
+  const [element, controls] = useScroll();
+
   return (
-    <MKBox component="section" py={12}>
+    <MKBox component="section" py={3} ref={element}>
       <Container>
         <Grid
           container
@@ -45,21 +51,23 @@ function Information() {
           sx={{ mx: "auto", textAlign: "center" }}
         >
           <MKTypography variant="h2"><p>Trusted by over </p></MKTypography>
-          <MKTypography variant="h2" color="info" textGradient mb={2}>
+          <MKTypography variant="h2" color="info" textGradient mb={1}>
           <div style={{marginLeft:10}}> 12+ clients</div>
           </MKTypography>
-          <MKTypography variant="body1" color="text" mb={2}>
+          <MKTypography variant="body1" color="text" mb={0}>
             Many Fortune  companies and startups love
             Golden Business Bridge&apos;s services.
           </MKTypography>
         </Grid>
-        <Grid container spacing={3} sx={{ mt: 8 }}>
+        <Grid container spacing={3} sx={{ mt: 0 }}>
           <Grid item xs={12} md={6} lg={4}>
             <DefaultReviewCard
               name="Jessy Bandya"
               date="Software Engineer"
               review="This is an excellent product, the documentation is excellent and helped me get things done more efficiently."
               rating={5}
+              variants={cardAnimation}
+              animate={controls}
             />
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
@@ -69,6 +77,8 @@ function Information() {
               date="Highways Engineer"
               review="I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"
               rating={5}
+              variants={cardAnimation}
+              animate={controls}
             />
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
@@ -77,6 +87,8 @@ function Information() {
               date="Structural Engineer"
               review="Great product. Helped me cut the time to set up a site. I used the components within instead of starting from scratch. I highly recommend for developers who want to spend more time on the backend!."
               rating={5}
+              variants={cardAnimation}
+              animate={controls}  
             />
           </Grid>
         </Grid>

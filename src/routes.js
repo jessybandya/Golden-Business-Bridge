@@ -67,6 +67,11 @@ import Dropdowns from "./layouts/sections/elements/dropdowns";
 import ProgressBars from "./layouts/sections/elements/progress-bars";
 import Toggles from "./layouts/sections/elements/toggles";
 import Services from "./components/Services";
+import Clients from "./components/Clients";
+import Partners from "./components/Partners";
+import Staffs from "./components/Staffs";
+
+
 
 const routes = [
   {
@@ -101,33 +106,33 @@ const routes = [
         name: "Clients",
         description: " ",
         dropdown: true,
-        route: "/sections/navigation/nav-tabs",
-        component: <NavTabs />,
+        route: "/clients",
+        component: <Clients />,
         collapse: [
           {
             name: "AGS Algosaibi WLL",
-            route: "/sections/page-sections/features",
-            component: <Features />, 
+        route: "/clients",
+        component: <Clients />,
           },
           {
             name: "Capaan Day Service",
-            route: "/sections/page-sections/features",
-            component: <Features />, 
+        route: "/clients",
+        component: <Clients />,
           },
           {
             name: "Ground Up Solutions",
-            route: "/sections/page-sections/features",
-            component: <Features />, 
+        route: "/clients",
+        component: <Clients />,
           },
           {
             name: "Hearth Associates ",
-            route: "/sections/page-sections/features",
-            component: <Features />, 
+        route: "/clients",
+        component: <Clients />,
           },
           {
             name: "Smart Africa Logistics",
-            route: "/sections/page-sections/features",
-            component: <Features />, 
+        route: "/clients",
+        component: <Clients />,
           },
           {
             name: "Etc...",
@@ -143,45 +148,45 @@ const routes = [
         ],
       },
       {
-        name: "Staff",
+        name: "Staffs",
         description: " ",
         dropdown: true,
-        route: "/sections/input-areas/forms",
-        component: <Forms />,
+        route: "/staffs",
+        component: <Staffs />,
         collapse: [
           {
             name: "1.	Business Development Manager",
-            route: "/sections/input-areas/forms",
-            component: <Forms />,
+            route: "/staffs",
+            component: <Staffs />,
           },
           {
             name: "2.	Investment Officer",
-            route: "/sections/input-areas/forms",
-            component: <Forms />,
+            route: "/staffs",
+            component: <Staffs />,
           },
           {
             name: "2.	Business Analyst",
-            route: "/sections/input-areas/forms",
-            component: <Forms />,
+            route: "/staffs",
+            component: <Staffs />,
           },
           {
             name: "4.	Financial Management Trainer",
-            route: "/sections/input-areas/forms",
-            component: <Forms />,
+            route: "/staffs",
+            component: <Staffs />,
           },
           {
             name: "5.	Marketing & Communications Manager",
-            route: "/sections/input-areas/forms",
-            component: <Forms />,
+            route: "/staffs",
+            component: <Staffs />,
           },{
             name: "6.	Construction Adviser",
-            route: "/sections/input-areas/forms",
-            component: <Forms />,
+            route: "/staffs",
+            component: <Staffs />,
           },
           {
             name: "",
-            route: "/sections/input-areas/forms",
-            component: <Forms />,
+            route: "/staffs",
+            component: <Staffs />,
           },
         ],
       },
@@ -189,35 +194,35 @@ const routes = [
         name: "Partners",
         description: " ",
         dropdown: true,
-        route: "/sections/attention-catchers/modals",
-        component: <Modals />,
+        route: "/partners",
+        component: <Partners />,
         collapse: [
           {
             name: "1.	Business Partners International(BPI)",
-            route: "/sections/attention-catchers/modals",
-            component: <Modals />,
+            route: "/partners",
+            component: <Partners />,
           },
           {
             name: "2.	Ibuild Global Kenya",
-            route: "/sections/attention-catchers/modals",
-            component: <Modals />,
+            route: "/partners",
+            component: <Partners />,
           },{
             name: "3.	Meta Plant",
-            route: "/sections/attention-catchers/modals",
-            component: <Modals />,
+            route: "/partners",
+            component: <Partners />,
           },{
             name: "4.	Job. N Marasi Advocates",
-            route: "/sections/attention-catchers/modals",
-            component: <Modals />,
+            route: "/partners",
+            component: <Partners />,
           },{
             name: "5.	Pala Advocates",
-            route: "/sections/attention-catchers/modals",
-            component: <Modals />,
+            route: "/partners",
+            component: <Partners />,
           },
           {
             name: "",
-            route: "/sections/attention-catchers/modals",
-            component: <Modals />,
+            route: "/partners",
+            component: <Partners />,
           },
         ],
       },

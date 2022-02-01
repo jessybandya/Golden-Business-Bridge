@@ -47,17 +47,19 @@ import footerRoutes from "../../footer.routes";
 import bgImage from "../../assets/images/bg-presentation.jpg";
 // import Testimonials from "./sections/Testimonials";
 import About from "./../../sections/About";
-import Footer from "./../../sections/Footer";
+import Footer from "../LandingPages/Author/sections/Footer";
 import Starter from "./../../sections/Starter";
 import Why from "./../../sections/Why";
 import Blogs from "./../../sections/Blogs";
 import ScrollToTop from "./../../components/ScrollToTop";
 import { motion } from "framer-motion";
-
+import { useScroll } from "./../../components/useScroll";
+import { textAnimation, cardAnimation } from "./../../utils/Animations";
 
 function Presentation() {
+  const [element, controls] = useScroll();
   return (
-    <motion.div initial="hidden" animate="show">
+    <motion.div initial="hidden" animate="show" ref={element}>
      <ScrollToTop />
       <DefaultNavbar
         routes={routes}
@@ -84,8 +86,7 @@ function Presentation() {
       >
         <Counters />
         <Information />
-        <Pages />
-        <Container sx={{ mt: 6 }}>
+        <Container sx={{ mt: 0 }}>
           <BuiltByDevelopers />
         </Container>
         <Container>
@@ -97,6 +98,8 @@ function Presentation() {
                 icon="flag"
                 title="Why Us?"
                 description="We will bring the best out of you and your company."
+                variants={cardAnimation}
+                animate={controls}
                 action={{
                   type: "external",
                   route: "#",
@@ -110,6 +113,8 @@ function Presentation() {
                 icon="precision_manufacturing"
                 title="Dilligence"
                 description="We commit to invest our energy and skills to make you succeed."
+                variants={cardAnimation}
+                animate={controls}
                 action={{
                   type: "external",
                   route: "#",
@@ -123,6 +128,8 @@ function Presentation() {
                 icon="apps"
                 title="Customer oriented"
                 description="We believe that your success is our success."
+                variants={cardAnimation}
+                animate={controls}
                 action={{
                   type: "external",
                   route: "#",
@@ -134,61 +141,10 @@ function Presentation() {
         </Container>
         <Testimonials />
         <Download />
-        <MKBox pt={18} pb={6}>
-          <Container>
-            <Grid container spacing={3}>
-              <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "left" } }}>
-                <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
-                  Thank you for your website visit!
-                </MKTypography>
-                <MKTypography variant="body1" color="text">
-                  We deliver the best services
-                </MKTypography>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                lg={5}
-                my={{ xs: 5, lg: "auto" }}
-                mr={{ xs: 0, lg: "auto" }}
-                sx={{ textAlign: { xs: "center", lg: "right" } }}
-              >
-                <MKSocialButton
-                  component="a"
-                  href="#"
-                  target="_blank"
-                  color="twitter"
-                  sx={{ mr: 1 }}
-                >
-                  <i className="fab fa-twitter" />
-                  &nbsp;Tweet
-                </MKSocialButton>
-                <MKSocialButton
-                  component="a"
-                  href="#"
-                  target="_blank"
-                  color="facebook"
-                  sx={{ mr: 1 }}
-                >
-                  <i className="fab fa-facebook" />
-                  &nbsp;Share
-                </MKSocialButton>
-                <MKSocialButton
-                  component="a"
-                  href="#"
-                  target="_blank"
-                  color="pinterest"
-                >
-                  <i className="fab fa-pinterest" />
-                  &nbsp;Pin it
-                </MKSocialButton>
-              </Grid>
-            </Grid>
-          </Container>
-        </MKBox>
+
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
+      <MKBox pt={0} px={1} mt={0}>
+        <Footer />
       </MKBox>
     </motion.div>
   );

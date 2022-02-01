@@ -45,21 +45,18 @@ function Team() {
         <Grid container>
           <Grid item xs={12} md={8} sx={{ mb: 6 }}>
             <MKTypography variant="h3" color="white">
-              The Executive Team
+              Our Patners
             </MKTypography>
-            <MKTypography variant="body2" color="white" opacity={0.8}>
-              There&apos;s nothing I really wanted to do in life that I wasn&apos;t able to get good
-              at. That&apos;s my skill.
-            </MKTypography>
+
           </Grid>
         </Grid>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={6}>
             <MKBox mb={1}>
               <HorizontalTeamCard
-                image="https://i.stack.imgur.com/l60Hf.png"
-                name="Rahab Wanderi"
-                position={{ color: "info", label: "Business Development Manager" }}
+                image="https://thumbs.dreamstime.com/b/handshake-icon-business-partners-icon-logo-handshake-icon-business-partners-icon-logo-white-background-120575817.jpg"
+                name="Business Partners International(BPI)"
+                position={{ color: "info", label: "" }}
                 // description="Artist is a term applied to a person who engages in an activity deemed to be an art."
               />
             </MKBox>
@@ -67,9 +64,9 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={1}>
               <HorizontalTeamCard
-                image="https://i.stack.imgur.com/l60Hf.png"
-                name="Mumbi Wachiuri"
-                position={{ color: "info", label: "Investment Officer" }}
+                image="https://thumbs.dreamstime.com/b/handshake-icon-business-partners-icon-logo-handshake-icon-business-partners-icon-logo-white-background-120575817.jpg"
+                name="Ibuild Global Kenya"
+                position={{ color: "info", label: "" }}
                 // description="Artist is a term applied to a person who engages in an activity deemed to be an art."
               />
             </MKBox>
@@ -77,9 +74,9 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                image="https://i.stack.imgur.com/l60Hf.png"
-                name="Aggrey Marisia"
-                position={{ color: "info", label: "Business Analyst" }}
+                image="https://thumbs.dreamstime.com/b/handshake-icon-business-partners-icon-logo-handshake-icon-business-partners-icon-logo-white-background-120575817.jpg"
+                name="Meta Plant"
+                position={{ color: "info", label: "" }}
                 // description="Artist is a term applied to a person who engages in an activity deemed to be an art."
               />
             </MKBox>
@@ -87,9 +84,9 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                image="https://i.stack.imgur.com/l60Hf.png"
-                name="Gladys Bett"
-                position={{ color: "info", label: "Financial Management Trainer" }}
+                image="https://thumbs.dreamstime.com/b/handshake-icon-business-partners-icon-logo-handshake-icon-business-partners-icon-logo-white-background-120575817.jpg"
+                name="Job. N Marasi Advocates"
+                position={{ color: "info", label: "" }}
                 // description="Artist is a term applied to a person who engages in an activity deemed to be an art."
               />
             </MKBox>
@@ -97,23 +94,14 @@ function Team() {
           <Grid item xs={12} lg={6}>
           <MKBox mb={{ xs: 1, lg: 0 }}>
             <HorizontalTeamCard
-              image="https://i.stack.imgur.com/l60Hf.png"
-              name="Linet Oola"
-              position={{ color: "info", label: "Marketing & Communications Manager" }}
+              image="https://thumbs.dreamstime.com/b/handshake-icon-business-partners-icon-logo-handshake-icon-business-partners-icon-logo-white-background-120575817.jpg"
+              name="Pala Advocates"
+              position={{ color: "info", label: "" }}
               // description="Artist is a term applied to a person who engages in an activity deemed to be an art."
             />
           </MKBox>
         </Grid>
-        <Grid item xs={12} lg={6}>
-        <MKBox mb={{ xs: 1, lg: 0 }}>
-          <HorizontalTeamCard
-            image="https://i.stack.imgur.com/l60Hf.png"
-            name="Kihara Nyaga"
-            position={{ color: "info", label: "Construction Adviser" }}
-            // description="Artist is a term applied to a person who engages in an activity deemed to be an art."
-          />
-        </MKBox>
-      </Grid>
+
         </Grid>
       </Container>
     </MKBox>

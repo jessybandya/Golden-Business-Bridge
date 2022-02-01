@@ -18,63 +18,88 @@ const imagesPrefix =
 
 export default [
   {
-    image: `https://image.shutterstock.com/image-photo/business-team-members-standing-over-260nw-1397307989.jpg`,
-    name: "AGS Algosaibi WLL. Co in Mogadishu, Somalia",
+    image: `https://www.capaandayservice.com/wp-content/uploads/2019/04/Icon-300x282.png`,
+    name: "Capaan Day Service in Enfield",
     route: "#",
+    desc:"London, United Kingdom"
+
+
+  },
+  {
+    image: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRUMoClBv_uakj7t9R-Zzy3C1u5K4yhKmMf8xFh3EAFYWHorgeTB7YbOQ9F7PTSeY7BoA&usqp=CAU`,
+    name: "AGS Algosaibi WLL. Co",
+    route: "#",
+    desc:"Mogadishu, Somalia"
+  },
+  {
+    image: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3umlepSWclK6IAgpct9BH01yM43AJ5KuE1WaI9Pc0BKTrLPQzjPin_UXu_LvbBxAqrqc&usqp=CAU`,
+    name: "Ground Up Solutions",
+    route: "#",
+    desc:"Nairobi, Kenya"
+  },
+  {
+    image: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAVgkQYm66jCbJFFaoXm3XRYWcwT_HIBmGPV55pgQ1HTIxZEPgpU1QLZy7ecW1S1sG2t0&usqp=CAU`,
+    name: "Hearth Associates",
+    route: "#",
+    desc:"Nairobi, Kenya"
+  },
+
+  {
+    image: `https://image.shutterstock.com/image-photo/business-team-members-standing-over-260nw-1397307989.jpg`,
+    name: "Barnacres Construction Company",
+    route: "#",
+    desc:"Nairobi, Kenya"
+  },
+  {
+    image: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFu67Trhs26SW2m5_6bP_kLPYgGP05TnFAREBDZWauOjS0KsbtfqdYSMCByn993UqWlv8&usqp=CAU`,
+    name: "Smart Africa Logistics",
+    route: "#",
+    desc:"Nairobi, Kenya"
+  },
+
+  {
+    image: `https://image.shutterstock.com/image-photo/business-team-members-standing-over-260nw-1397307989.jpg`,
+    name: "Jaber's Coture",
+    route: "#",
+    desc:"Nairobi, Kenya"
+  },
+  {
+    image: `https://www.enigmaconsulting.nl/wp-content/uploads/2019/10/Enigma_Logo_SocialMediaHeader.png`,
+    name: "Enigma Consultancy Services",
+    route: "#",
+    desc:"Nairobi, Kenya"
+  },
+  {
+    image: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJJocgEmIxFniSAjC9wZ86OaFuyIqFyWziHA&usqp=CAU`,
+    name: "Wits Technology",
+    route: "#",
+    desc:"Nairobi, Kenya"
   },
   {
     image: `https://image.shutterstock.com/image-photo/business-team-members-standing-over-260nw-1397307989.jpg`,
-    name: "AGS Algosaibi WLL. Co in Mogadishu, Somalia",
+    name: "Njeri Chege Advocates",
     route: "#",
+    desc:"Nairobi, Kenya"
   },
   {
     image: `https://image.shutterstock.com/image-photo/business-team-members-standing-over-260nw-1397307989.jpg`,
-    name: "AGS Algosaibi WLL. Co in Mogadishu, Somalia",
+    name: "Haja Business Solutions",
     route: "#",
-  },
-  {
+    desc:"Nairobi, Kenya"
+  },  {
     image: `https://image.shutterstock.com/image-photo/business-team-members-standing-over-260nw-1397307989.jpg`,
-    name: "AGS Algosaibi WLL. Co in Mogadishu, Somalia",
+    name: "BUHA Events",
     route: "#",
-  },
-  {
-    image: `https://image.shutterstock.com/image-photo/business-team-members-standing-over-260nw-1397307989.jpg`,
-    name: "AGS Algosaibi WLL. Co in Mogadishu, Somalia",
+    desc:"Nairobi, Kenya"
+  },  {
+    image: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5zOE20Aya1Uivu_wFHbKdGBUmEGatFGXJRk1ckvb-9xzgr7_0DxVcHzRuZ1xd1TgRxhg&usqp=CAU`,
+    name: "KNB Services Limited",
     route: "#",
-  },
-  {
-    image: `https://image.shutterstock.com/image-photo/business-team-members-standing-over-260nw-1397307989.jpg`,
-    name: "AGS Algosaibi WLL. Co in Mogadishu, Somalia",
+    desc:"Nairobi, Kenya"
+  },  {
+    image: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOVYsIP7mmQI_858DI_92T3htbz_qm5IXy50KI97nIJD4WV2iOWv1d0w7oLlHsTg2hYFo&usqp=CAU`,
+    name: "Zoe Dishes",
     route: "#",
-  },
-  {
-    image: `https://image.shutterstock.com/image-photo/business-team-members-standing-over-260nw-1397307989.jpg`,
-    name: "AGS Algosaibi WLL. Co in Mogadishu, Somalia",
-    route: "#",
-  },
-  {
-    image: `https://image.shutterstock.com/image-photo/business-team-members-standing-over-260nw-1397307989.jpg`,
-    name: "AGS Algosaibi WLL. Co in Mogadishu, Somalia",
-    route: "#",
-  },
-  {
-    image: `https://image.shutterstock.com/image-photo/business-team-members-standing-over-260nw-1397307989.jpg`,
-    name: "AGS Algosaibi WLL. Co in Mogadishu, Somalia",
-    route: "#",
-  },
-  {
-    image: `https://image.shutterstock.com/image-photo/business-team-members-standing-over-260nw-1397307989.jpg`,
-    name: "AGS Algosaibi WLL. Co in Mogadishu, Somalia",
-    route: "#",
-  },
-  {
-    image: `https://image.shutterstock.com/image-photo/business-team-members-standing-over-260nw-1397307989.jpg`,
-    name: "AGS Algosaibi WLL. Co in Mogadishu, Somalia",
-    route: "#",
-  },
-  {
-    image: `https://image.shutterstock.com/image-photo/business-team-members-standing-over-260nw-1397307989.jpg`,
-    name: "AGS Algosaibi WLL. Co in Mogadishu, Somalia",
-    route: "#",
+    desc:"Nairobi, Kenya"
   },
 ];

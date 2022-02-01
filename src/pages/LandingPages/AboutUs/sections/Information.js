@@ -21,7 +21,7 @@ import Grid from "@mui/material/Grid";
 import MKBox from "../../../../components/MKBox";
 
 // Material Kit 2 React examples
-import DefaultInfoCard from "../../../../examples/Cards/InfoCards/DefaultInfoCard";
+import DefaultInfoCard from "../../../../examples/Cards/InfoCards/DefaultInfoCard1";
 import CenteredBlogCard from "../../../../examples/Cards/BlogCards/CenteredBlogCard";
 import { motion } from "framer-motion";
 import { reveal } from "../../../../utils/Animations";
@@ -31,10 +31,16 @@ function Information() {
   const [element, controls] = useScroll();
 
   return (
-    <MKBox component="section" py={12} ref={element}>
+    <MKBox component="section" py={0} ref={element}>
       <Container>
       <div className="cards" ref={element}
       >
+      <h4><i><b>Based on where you are, we work towards seeing you and your business move from one level to another. Be it in ensuring that your business operations run smoothly or linking you to a potential financier/investor, we will walk with you till you reach there. This is through our admin services and financial consultancy services.</b></i></h4>
+      <div style={{marginBottom: 15,marginTop:10}}>
+      <hr />
+      <span style={{fontWeight:"800"}}><center><h2>Why Us?</h2></center></span>
+      <hr />
+      </div>
         <Grid container spacing={3} alignItems="center">
           <Grid item xs={12} lg={6}>
             <Grid container justifyContent="flex-start">
@@ -44,7 +50,6 @@ function Information() {
                     icon="public"
                     title="Nurture"
                     description="Nurturing is our strenght. We will bring the best out of you and your company."
-                    animateCustom={controls}
                   />
                 </MKBox>
               </Grid>
@@ -54,7 +59,6 @@ function Information() {
                     icon="public"
                     title="Dilligence"
                     description="We commit to invest our energy and skills to make you succeed."
-                    animateCustom={controls}
                   />
                 </MKBox>
               </Grid>
@@ -64,7 +68,6 @@ function Information() {
                     icon="public"
                     title="Communication"
                     description="We listen to your needs and offer the solution. Where it is not in our scope, we recommend vetted professionals."
-                    animateCustom={controls}
                   />
                 </MKBox>
               </Grid>
@@ -74,7 +77,6 @@ function Information() {
                     icon="public"
                     title="Teamwork"
                     description="We walk and work with you to provide services that will make your business better."
-                    animateCustom={controls}
                   />
                 </MKBox>
               </Grid>

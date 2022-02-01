@@ -26,8 +26,10 @@ import MuiLink from "@mui/material/Link";
 // Material Kit 2 React components
 import MKBox from "../../../../components/MKBox";
 import MKTypography from "../../../../components/MKTypography";
+import { motion } from "framer-motion";
 
-function FilledInfoCard({ variant, color, icon, title, description, action }) {
+
+function FilledInfoCard({ variant, color, icon, title, description, action, variants, animate }) {
   const buttonStyles = {
     width: "max-content",
     display: "flex",
@@ -62,60 +64,65 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
       pb={3}
       px={3}
     >
+
+    <MKTypography
+    display="block"
+    variant="h3"
+    color={iconColor}
+    textGradient={variant === "contained"}
+    mt={-0.625}
+  >
+    {typeof icon === "string" ? <Icon>{icon}</Icon> : icon}
+  </MKTypography>
+  <MKBox pt={{ xs: 3, md: 0 }} pl={{ xs: 0, md: 2 }} lineHeight={1}
+
+  >
+    <MKTypography
+      display="block"
+      variant="5"
+      color={variant === "contained" || color === "light" ? "dark" : "white"}
+      fontWeight="bold"
+      mb={1}
+    >
+      {title}
+    </MKTypography>
+    <MKTypography
+      display="block"
+      variant="body2"
+      color={variant === "contained" || color === "light" ? "text" : "white"}
+      mb={2}
+    >
+      {description}
+    </MKTypography>
+    {action && action.type === "external" ? (
       <MKTypography
-        display="block"
-        variant="h3"
-        color={iconColor}
-        textGradient={variant === "contained"}
-        mt={-0.625}
+        component={MuiLink}
+        href={action.route}
+        target="_blank"
+        rel="noreferrer"
+        variant="body2"
+        fontWeight="regular"
+        color={variant === "contained" ? color : "white"}
+        sx={buttonStyles}
       >
-        {typeof icon === "string" ? <Icon>{icon}</Icon> : icon}
+        {action.label} 
       </MKTypography>
-      <MKBox pt={{ xs: 3, md: 0 }} pl={{ xs: 0, md: 2 }} lineHeight={1}>
-        <MKTypography
-          display="block"
-          variant="5"
-          color={variant === "contained" || color === "light" ? "dark" : "white"}
-          fontWeight="bold"
-          mb={1}
-        >
-          {title}
-        </MKTypography>
-        <MKTypography
-          display="block"
-          variant="body2"
-          color={variant === "contained" || color === "light" ? "text" : "white"}
-          mb={2}
-        >
-          {description}
-        </MKTypography>
-        {action && action.type === "external" ? (
-          <MKTypography
-            component={MuiLink}
-            href={action.route}
-            target="_blank"
-            rel="noreferrer"
-            variant="body2"
-            fontWeight="regular"
-            color={variant === "contained" ? color : "white"}
-            sx={buttonStyles}
-          >
-            {action.label} 
-          </MKTypography>
-        ) : null}
-        {action && action.type === "internal" ? (
-          <MKTypography
-            component={Link}
-            to={action.route}
-            variant="body2"
-            fontWeight="regular"
-            color={variant === "contained" ? color : "white"}
-            sx={buttonStyles}
-          >
-            {action.label} 
-          </MKTypography>
-        ) : null}
-      </MKBox>
+    ) : null}
+    {action && action.type === "internal" ? (
+      <MKTypography
+        component={Link}
+        to={action.route}
+        variant="body2"
+        fontWeight="regular"
+        color={variant === "contained" ? color : "white"}
+        sx={buttonStyles}
+      >
+        {action.label} 
+      </MKTypography>
+    ) : null}
+  </MKBox>
+    
+    
     </MKBox>
   );
 }

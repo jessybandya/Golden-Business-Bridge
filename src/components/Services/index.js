@@ -3,7 +3,7 @@ import ScrollToTop from "../ScrollToTop";
 import { motion } from "framer-motion";
 import Starter from "../../sections/Starter";
 import About from "../../sections/About";
-import Footer from "../../sections/Footer";
+import Footer from "../../pages/LandingPages/Author/sections/Footer";
 import Why from "../../sections/Why";
 import Blogs from "../../sections/Blogs";
 import DesignBlocks from "../../pages/Presentation/sections/DesignBlocks";
@@ -108,7 +108,7 @@ function Services() {
   <div style={{marginTop:-50}}>
   <DesignBlocks />
   </div>
- <DefaultFooter content={footerRoutes} />
+ <Footer/>
 
       </motion.div>
       )
