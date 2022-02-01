@@ -33,7 +33,7 @@ function Profile() {
       <Container>
         <Grid container item xs={12} justifyContent="center" mx="auto">
           <MKBox mt={{ xs: -16, md: -20 }} textAlign="center">
-            <MKAvatar src={profilePicture} alt="Burce Mars" size="xxl" shadow="xl" />
+            <MKAvatar src="https://previews.123rf.com/images/glopphy/glopphy1802/glopphy180200099/96970589-teamwork-business-partners-people-identity-business-card-logo-vector.jpg" alt="Burce Mars" size="xxl" shadow="xl" />
           </MKBox>
           <Grid container justifyContent="center" py={6}>
             <Grid item xs={12} md={7} mx={{ xs: "auto", sm: 6, md: 1 }}>

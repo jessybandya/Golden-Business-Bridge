@@ -54,7 +54,7 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={1}>
               <HorizontalTeamCard
-                image="https://thumbs.dreamstime.com/b/handshake-icon-business-partners-icon-logo-handshake-icon-business-partners-icon-logo-white-background-120575817.jpg"
+                image="https://previews.123rf.com/images/glopphy/glopphy1802/glopphy180200099/96970589-teamwork-business-partners-people-identity-business-card-logo-vector.jpg"
                 name="Business Partners International(BPI)"
                 position={{ color: "info", label: "" }}
                 // description="Artist is a term applied to a person who engages in an activity deemed to be an art."
@@ -64,7 +64,7 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={1}>
               <HorizontalTeamCard
-                image="https://thumbs.dreamstime.com/b/handshake-icon-business-partners-icon-logo-handshake-icon-business-partners-icon-logo-white-background-120575817.jpg"
+                image="https://previews.123rf.com/images/glopphy/glopphy1802/glopphy180200099/96970589-teamwork-business-partners-people-identity-business-card-logo-vector.jpg"
                 name="Ibuild Global Kenya"
                 position={{ color: "info", label: "" }}
                 // description="Artist is a term applied to a person who engages in an activity deemed to be an art."
@@ -74,7 +74,7 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                image="https://thumbs.dreamstime.com/b/handshake-icon-business-partners-icon-logo-handshake-icon-business-partners-icon-logo-white-background-120575817.jpg"
+                image="https://previews.123rf.com/images/glopphy/glopphy1802/glopphy180200099/96970589-teamwork-business-partners-people-identity-business-card-logo-vector.jpg"
                 name="Meta Plant"
                 position={{ color: "info", label: "" }}
                 // description="Artist is a term applied to a person who engages in an activity deemed to be an art."
@@ -84,7 +84,7 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                image="https://thumbs.dreamstime.com/b/handshake-icon-business-partners-icon-logo-handshake-icon-business-partners-icon-logo-white-background-120575817.jpg"
+                image="https://previews.123rf.com/images/glopphy/glopphy1802/glopphy180200099/96970589-teamwork-business-partners-people-identity-business-card-logo-vector.jpg"
                 name="Job. N Marasi Advocates"
                 position={{ color: "info", label: "" }}
                 // description="Artist is a term applied to a person who engages in an activity deemed to be an art."
@@ -94,7 +94,7 @@ function Team() {
           <Grid item xs={12} lg={6}>
           <MKBox mb={{ xs: 1, lg: 0 }}>
             <HorizontalTeamCard
-              image="https://thumbs.dreamstime.com/b/handshake-icon-business-partners-icon-logo-handshake-icon-business-partners-icon-logo-white-background-120575817.jpg"
+              image="https://previews.123rf.com/images/glopphy/glopphy1802/glopphy180200099/96970589-teamwork-business-partners-people-identity-business-card-logo-vector.jpg"
               name="Pala Advocates"
               position={{ color: "info", label: "" }}
               // description="Artist is a term applied to a person who engages in an activity deemed to be an art."
