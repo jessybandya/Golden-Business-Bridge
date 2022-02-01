@@ -25,6 +25,7 @@ import MKTypography from "../../../components/MKTypography";
 // Material Kit 2 React examples
 import DefaultNavbar from "../../../examples/Navbars/DefaultNavbar";
 import DefaultFooter from "../../../examples/Footers/DefaultFooter";
+import Footer from "../Author/sections/Footer";
 
 // Routes
 import routes from "../../../routes";
@@ -140,7 +141,7 @@ function ContactUs() {
         </Grid>
       </Grid>
       <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
+        <Footer/>
       </MKBox>
     </>
   );
