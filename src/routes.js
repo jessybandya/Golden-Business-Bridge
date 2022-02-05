@@ -141,8 +141,8 @@ const routes = [
           
           {
             name: "",
-            route: "/sections/navigation/nav-tabs",
-            component: <NavTabs />,
+            route: "/clients",
+            component: <Clients />,
           },
           
         ],
@@ -190,42 +190,42 @@ const routes = [
           },
         ],
       },
-      {
-        name: "Partners",
-        description: " ",
-        dropdown: true,
-        route: "/partners",
-        component: <Partners />,
-        collapse: [
-          {
-            name: "1.	Business Partners International(BPI)",
-            route: "/partners",
-            component: <Partners />,
-          },
-          {
-            name: "2.	Ibuild Global Kenya",
-            route: "/partners",
-            component: <Partners />,
-          },{
-            name: "3.	Meta Plant",
-            route: "/partners",
-            component: <Partners />,
-          },{
-            name: "4.	Job. N Marasi Advocates",
-            route: "/partners",
-            component: <Partners />,
-          },{
-            name: "5.	Pala Advocates",
-            route: "/partners",
-            component: <Partners />,
-          },
-          {
-            name: "",
-            route: "/partners",
-            component: <Partners />,
-          },
-        ],
-      },
+      // {
+      //   name: "Partners",
+      //   description: " ",
+      //   dropdown: true,
+      //   route: "/partners",
+      //   component: <Partners />,
+      //   collapse: [
+      //     {
+      //       name: "1.	Business Partners International(BPI)",
+      //       route: "/partners",
+      //       component: <Partners />,
+      //     },
+      //     {
+      //       name: "2.	Ibuild Global Kenya",
+      //       route: "/partners",
+      //       component: <Partners />,
+      //     },{
+      //       name: "3.	Meta Plant",
+      //       route: "/partners",
+      //       component: <Partners />,
+      //     },{
+      //       name: "4.	Job. N Marasi Advocates",
+      //       route: "/partners",
+      //       component: <Partners />,
+      //     },{
+      //       name: "5.	Pala Advocates",
+      //       route: "/partners",
+      //       component: <Partners />,
+      //     },
+      //     {
+      //       name: "",
+      //       route: "/partners",
+      //       component: <Partners />,
+      //     },
+      //   ],
+      // },
       // {
       //   name: "elements",
       //   description: "See all 32 examples",
